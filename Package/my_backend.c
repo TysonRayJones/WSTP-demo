@@ -84,7 +84,7 @@ void internal_updateProgress(int val) {
 
     // i = val
     WSPutFunction(stdlink, "Set", 2);
-    WSPutSymbol(stdlink, "i");
+    WSPutSymbol(stdlink, "MyPackage`Private`i");
     WSPutInteger(stdlink, val);
 
     WSEndPacket(stdlink);
