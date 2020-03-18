@@ -1,0 +1,266 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      9052,        258]
+NotebookOptionsPosition[      5992,        194]
+NotebookOutlinePosition[      6982,        224]
+CellTagsIndexPosition[      6812,        217]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"SetDirectory", " ", "@", " ", 
+   RowBox[{"NotebookDirectory", "[", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Import", "[", "\"\<Package/my_package.m\>\"", "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Install", "[", "\"\<my_exec\>\"", "]"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.7935461481383877`*^9, 3.793546173955709*^9}, {
+  3.7935474172361*^9, 
+  3.793547421770793*^9}},ExpressionUUID->"1a37a8a0-a531-45c6-b509-\
+54d870a21fde"],
+
+Cell["No idea why this isn\[CloseCurlyQuote]t working:", "Text",
+ CellChangeTimes->{{3.793547649154194*^9, 
+  3.793547653233655*^9}},ExpressionUUID->"28a83b6f-2ad6-41ea-b224-\
+178ecf6b74e3"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "MyPackage`"}]], "Input",
+ CellChangeTimes->{{3.793547636378749*^9, 
+  3.793547639858416*^9}},ExpressionUUID->"b4f5a291-acac-420d-8eaa-\
+92502c2ec6e5"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Information","notfound",
+   "\"Symbol \\!\\(\\*RowBox[{\\\"\\\\\\\"MyPackage`\\\\\\\"\\\"}]\\) not \
+found.\"",2,30,5,29142281462066622363,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.793547640487575*^9},ExpressionUUID->"4c57aeba-4aa9-4f2c-b299-\
+43bcca6ad3d7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "DirectFunc"}]], "Input",
+ CellChangeTimes->{{3.793547734954627*^9, 3.79354774786681*^9}, {
+  3.793547869804474*^9, 
+  3.7935478699627132`*^9}},ExpressionUUID->"8d953fd7-66c4-4cee-83ab-\
+16f7fb06609d"],
+
+Cell[BoxData["\<\"DirectFunc[myArg] decides whether myArg is a lovely number. \
+Accepts only positive numbers\"\>"], "Print", "PrintUsage",
+ CellChangeTimes->{3.793547870247286*^9},
+ CellTags->
+  "Info543793547870-5866894",ExpressionUUID->"aa68333e-bd82-4780-9d12-\
+4b713f7cdf60"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"DirectFunc", "[", "32", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"DirectFunc", "[", 
+  RowBox[{"-", "2"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.793547755219446*^9, 
+  3.793547761410636*^9}},ExpressionUUID->"637d891c-9c50-4154-a91a-\
+8352dccd55b2"],
+
+Cell[BoxData["\<\"That's a terrible number\"\>"], "Output",
+ CellChangeTimes->{3.79354776185911*^9, 
+  3.7935478264571342`*^9},ExpressionUUID->"28e1680d-e091-4e9d-9319-\
+714496456d82"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "DirectFunc","error",
+   "\"\\!\\(\\*RowBox[{\\\"\\\\\\\"Only positive integers accepted.\\\\\\\"\\\
+\"}]\\)\"",2,46,9,29142281462066622363,"Local","MyPackage`DirectFunc"},
+  "MessageTemplate2"]], "Message", "MSG",
+ CellChangeTimes->{3.793547761861925*^9, 
+  3.7935478264754343`*^9},ExpressionUUID->"490e15ba-93c7-40d0-b592-\
+b16dd2840025"],
+
+Cell[BoxData["$Failed"], "Output",
+ CellChangeTimes->{3.79354776185911*^9, 
+  3.793547826481183*^9},ExpressionUUID->"cb805103-8898-41e9-8dbc-\
+d7319254f569"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "WrappedFunc"}]], "Input",
+ CellChangeTimes->{{3.793547873643358*^9, 
+  3.793547874687317*^9}},ExpressionUUID->"50d82b4c-bd68-410e-a9b3-\
+8218ebe08bbc"],
+
+Cell[BoxData["\<\"WrappedFunc[myArg] squares myArg.\"\>"], "Print", "PrintUsage",
+ CellChangeTimes->{3.793547875164421*^9},
+ CellTags->
+  "Info553793547875-5866894",ExpressionUUID->"5e887b43-f2b7-4138-a364-\
+d6433084d7b7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"WrappedFunc", "[", "4", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"WrappedFunc", "[", 
+  RowBox[{"-", "1"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.793547764624851*^9, 
+  3.7935477722105703`*^9}},ExpressionUUID->"d237bbdd-d482-4ba8-acb9-\
+6a0670ce248e"],
+
+Cell[BoxData[
+ StyleBox["16",
+  StripOnInput->False,
+  LineColor->RGBColor[0, 1, 0],
+  FrontFaceColor->RGBColor[0, 1, 0],
+  BackFaceColor->RGBColor[0, 1, 0],
+  GraphicsColor->RGBColor[0, 1, 0],
+  FontSize->Large,
+  FontColor->RGBColor[0, 1, 0]]], "Output",
+ CellChangeTimes->{
+  3.7935477724498463`*^9, {3.7935478283907013`*^9, 
+   3.793547857975749*^9}},ExpressionUUID->"9158b079-6ef0-42bb-98a9-\
+ee6a883b06e5"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "WrappedFunc","error",
+   "\"\\!\\(\\*RowBox[{\\\"\\\\\\\"Only even numbers \
+accepted.\\\\\\\"\\\"}]\\)\"",2,53,11,29142281462066622363,"Local",
+   "MyPackage`WrappedFunc"},
+  "MessageTemplate2"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.793547772452956*^9, {3.793547828397478*^9, 
+   3.793547857981599*^9}},ExpressionUUID->"73977d9c-7c6d-46e1-9755-\
+59c0068afd81"],
+
+Cell[BoxData["$Failed"], "Output",
+ CellChangeTimes->{
+  3.7935477724498463`*^9, {3.7935478283907013`*^9, 
+   3.793547857995088*^9}},ExpressionUUID->"d09e7973-5414-4293-9262-\
+98821195cf48"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "SlowFunc"}]], "Input",
+ CellChangeTimes->{{3.7935478782833433`*^9, 
+  3.793547879542933*^9}},ExpressionUUID->"82aaa0b9-10c1-4f42-a945-\
+0a6b5ddb6e03"],
+
+Cell[BoxData["\<\"SlowFunc[] does something slow, but tries to look good \
+doing it.\"\>"], "Print", "PrintUsage",
+ CellChangeTimes->{3.7935478798756742`*^9},
+ CellTags->
+  "Info563793547879-5866894",ExpressionUUID->"e29cf694-453b-4819-8346-\
+fa0a823f4c51"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"SlowFunc", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.793547864385977*^9, 
+  3.7935478888438063`*^9}},ExpressionUUID->"a49c900d-d061-4c5c-818b-\
+cf661dc0afb7"],
+
+Cell[BoxData["\<\"hello\"\>"], "Output",
+ CellChangeTimes->{
+  3.793547889034505*^9},ExpressionUUID->"e83d9392-1a6f-481d-a6ce-\
+9a218a119aca"]
+}, Open  ]]
+},
+WindowSize->{808, 706},
+WindowMargins->{{12, Automatic}, {Automatic, 24}},
+FrontEndVersion->"11.2 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+10, 2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "Info543793547870-5866894"->{
+  Cell[2056, 67, 280, 5, 46, "Print",ExpressionUUID->"aa68333e-bd82-4780-9d12-4b713f7cdf60",
+   CellTags->"Info543793547870-5866894"]},
+ "Info553793547875-5866894"->{
+  Cell[3588, 114, 222, 4, 46, "Print",ExpressionUUID->"5e887b43-f2b7-4138-a364-d6433084d7b7",
+   CellTags->"Info553793547875-5866894"]},
+ "Info563793547879-5866894"->{
+  Cell[5353, 172, 257, 5, 46, "Print",ExpressionUUID->"e29cf694-453b-4819-8346-fa0a823f4c51",
+   CellTags->"Info563793547879-5866894"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"Info543793547870-5866894", 6317, 205},
+ {"Info553793547875-5866894", 6484, 208},
+ {"Info563793547879-5866894", 6652, 211}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 506, 12, 73, "Input",ExpressionUUID->"1a37a8a0-a531-45c6-b509-54d870a21fde"],
+Cell[1067, 34, 190, 3, 35, "Text",ExpressionUUID->"28a83b6f-2ad6-41ea-b224-178ecf6b74e3"],
+Cell[CellGroupData[{
+Cell[1282, 41, 179, 4, 30, "Input",ExpressionUUID->"b4f5a291-acac-420d-8eaa-92502c2ec6e5"],
+Cell[1464, 47, 323, 8, 24, "Message",ExpressionUUID->"4c57aeba-4aa9-4f2c-b299-43bcca6ad3d7"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1824, 60, 229, 5, 30, "Input",ExpressionUUID->"8d953fd7-66c4-4cee-83ab-16f7fb06609d"],
+Cell[2056, 67, 280, 5, 46, "Print",ExpressionUUID->"aa68333e-bd82-4780-9d12-4b713f7cdf60",
+ CellTags->"Info543793547870-5866894"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2373, 77, 274, 6, 52, "Input",ExpressionUUID->"637d891c-9c50-4154-a91a-8352dccd55b2"],
+Cell[2650, 85, 184, 3, 34, "Output",ExpressionUUID->"28e1680d-e091-4e9d-9319-714496456d82"],
+Cell[2837, 90, 371, 8, 24, "Message",ExpressionUUID->"490e15ba-93c7-40d0-b592-b16dd2840025"],
+Cell[3211, 100, 157, 3, 34, "Output",ExpressionUUID->"cb805103-8898-41e9-8dbc-d7319254f569"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3405, 108, 180, 4, 30, "Input",ExpressionUUID->"50d82b4c-bd68-410e-a9b3-8218ebe08bbc"],
+Cell[3588, 114, 222, 4, 46, "Print",ExpressionUUID->"5e887b43-f2b7-4138-a364-d6433084d7b7",
+ CellTags->"Info553793547875-5866894"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3847, 123, 277, 6, 52, "Input",ExpressionUUID->"d237bbdd-d482-4ba8-acb9-6a0670ce248e"],
+Cell[4127, 131, 412, 12, 48, "Output",ExpressionUUID->"9158b079-6ef0-42bb-98a9-ee6a883b06e5"],
+Cell[4542, 145, 399, 10, 24, "Message",ExpressionUUID->"73977d9c-7c6d-46e1-9755-59c0068afd81"],
+Cell[4944, 157, 190, 4, 34, "Output",ExpressionUUID->"d09e7973-5414-4293-9262-98821195cf48"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5171, 166, 179, 4, 30, "Input",ExpressionUUID->"82aaa0b9-10c1-4f42-a945-0a6b5ddb6e03"],
+Cell[5353, 172, 257, 5, 46, "Print",ExpressionUUID->"e29cf694-453b-4819-8346-fa0a823f4c51",
+ CellTags->"Info563793547879-5866894"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5647, 182, 184, 4, 30, "Input",ExpressionUUID->"a49c900d-d061-4c5c-818b-cf661dc0afb7"],
+Cell[5834, 188, 142, 3, 34, "Output",ExpressionUUID->"e83d9392-1a6f-481d-a6ce-9a218a119aca"]
+}, Open  ]]
+}
+]
+*)
+
