@@ -31,8 +31,10 @@ BeginPackage["MyPackage`"]
             invalidArgs[WrappedFunc]
 
 
-        SlowFunc[] :=
-            privateSlowFunc[]
+        SlowFunc[] := Monitor[
+            i=0; privateSlowFunc[],
+            ProgressIndicator[i,{0,10}]
+        ]
         
         
     End[ ]

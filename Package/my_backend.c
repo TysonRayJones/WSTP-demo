@@ -1,5 +1,6 @@
 
 #include "wstp.h"
+#include <unistd.h>
 
 /* the Message tag bound to each function, with which we tag error messages */
 #define ERROR_TAG "error"
@@ -72,7 +73,35 @@ void private_wrappedFunc(void) {
 
 
 
+
+/*
+ * dynamic kernel updating during C execution 
+ */
+
+void internal_updateProgress(int val) {
+
+    WSPutFunction(stdlink, "EvaluatePacket", 1);
+
+    // i = val
+    WSPutFunction(stdlink, "Set", 2);
+    WSPutSymbol(stdlink, "i");
+    WSPutInteger(stdlink, val);
+
+    WSEndPacket(stdlink);
+    WSNextPacket(stdlink);
+    WSNewPacket(stdlink);
+
+    // a new packet is now expected; caller MUST send something else
+}
+
 void private_slowFunc(void) {
+    
+    int i=0;
+    for (int i=0; i<10; i++) {
+        
+        sleep(1);
+        internal_updateProgress(i);
+    }
     
     WSPutString(stdlink, "hello");
 }

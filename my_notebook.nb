@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      9052,        258]
-NotebookOptionsPosition[      5992,        194]
-NotebookOutlinePosition[      6982,        224]
-CellTagsIndexPosition[      6812,        217]
+NotebookDataLength[      9200,        262]
+NotebookOptionsPosition[      6132,        198]
+NotebookOutlinePosition[      7122,        228]
+CellTagsIndexPosition[      6952,        221]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -186,10 +186,14 @@ Cell[BoxData[
   3.7935478888438063`*^9}},ExpressionUUID->"a49c900d-d061-4c5c-818b-\
 cf661dc0afb7"],
 
-Cell[BoxData["\<\"hello\"\>"], "Output",
+Cell[BoxData[
+ DynamicBox[ToBoxes[
+   ProgressIndicator[MyPackage`Private`i, {0, 10}], StandardForm],
+  Evaluator->"Local",
+  ImageSizeCache->{200., {5., 11.}}]], "PrintTemporary",
  CellChangeTimes->{
-  3.793547889034505*^9},ExpressionUUID->"e83d9392-1a6f-481d-a6ce-\
-9a218a119aca"]
+  3.793548618026853*^9},ExpressionUUID->"9acfaa01-4ede-4932-8ef5-\
+aa31a5861449"]
 }, Open  ]]
 },
 WindowSize->{808, 706},
@@ -216,9 +220,9 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Info543793547870-5866894", 6317, 205},
- {"Info553793547875-5866894", 6484, 208},
- {"Info563793547879-5866894", 6652, 211}
+ {"Info543793547870-5866894", 6457, 209},
+ {"Info553793547875-5866894", 6624, 212},
+ {"Info563793547879-5866894", 6792, 215}
  }
 *)
 (*NotebookFileOutline
@@ -258,7 +262,7 @@ Cell[5353, 172, 257, 5, 46, "Print",ExpressionUUID->"e29cf694-453b-4819-8346-fa0
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[5647, 182, 184, 4, 30, "Input",ExpressionUUID->"a49c900d-d061-4c5c-818b-cf661dc0afb7"],
-Cell[5834, 188, 142, 3, 34, "Output",ExpressionUUID->"e83d9392-1a6f-481d-a6ce-9a218a119aca"]
+Cell[5834, 188, 282, 7, 27, "PrintTemporary",ExpressionUUID->"9acfaa01-4ede-4932-8ef5-aa31a5861449"]
 }, Open  ]]
 }
 ]
